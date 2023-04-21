@@ -45,7 +45,7 @@ test = script do
 
     exercise_thing <- submit app2 $ do
         exerciseCmd exercise_app RejectRPC with
-            newReason = "text1"
+            newReason = "Exercise thing - New reason 1"
 
     updateRPC <- submit app1 $ do
         exerciseCmd exercise_thing UpdateRPC with
